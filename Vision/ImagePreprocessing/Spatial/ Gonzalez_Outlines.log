@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.15)  1 MAR 2016 12:07
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.15)  8 MAR 2016 09:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -693,37 +693,56 @@ File: ./Imgs/bitPlaneSlicing.png Graphic file (type png)
 Package pdftex.def Info: ./Imgs/bitPlaneSlicing.png used on input line 162.
 (pdftex.def)             Requested size: 301.1261pt x 277.2113pt.
  [6 <./Imgs/bitPlaneSlicing.png>] [7]
+Underfull \hbox (badness 10000) in paragraph at lines 243--244
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 245--246
+
+ []
+
+[8] <./Imgs/mmr.png, id=52, 989.6975pt x 384.43625pt>
+File: ./Imgs/mmr.png Graphic file (type png)
+ <use ./Imgs/mmr.png>
+Package pdftex.def Info: ./Imgs/mmr.png used on input line 257.
+(pdftex.def)             Requested size: 301.1261pt x 116.96837pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
+
+ []
+
 No file  Gonzalez_Outlines.bbl.
-[8] (./ Gonzalez_Outlines.aux) ) 
+[9 <./Imgs/mmr.png>] (./ Gonzalez_Outlines.aux) ) 
 Here is how much of TeX's memory you used:
- 10974 strings out of 493304
- 232412 string characters out of 6139870
+ 10979 strings out of 493304
+ 232494 string characters out of 6139870
  260444 words of memory out of 5000000
- 14279 multiletter control sequences out of 15000+600000
+ 14283 multiletter control sequences out of 15000+600000
  12543 words of font info for 47 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  39i,7n,35p,10447b,641s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex1
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
-10.pfb>
-Output written on  Gonzalez_Outlines.pdf (8 pages, 1400547 bytes).
+</usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cmextra/cmex7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmti10.pfb>
+Output written on  Gonzalez_Outlines.pdf (9 pages, 1684860 bytes).
 PDF statistics:
- 106 PDF objects out of 1000 (max. 8388607)
- 71 compressed objects within 1 object stream
+ 110 PDF objects out of 1000 (max. 8388607)
+ 73 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

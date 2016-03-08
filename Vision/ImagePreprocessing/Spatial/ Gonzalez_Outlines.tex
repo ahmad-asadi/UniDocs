@@ -239,8 +239,34 @@ Assume the given image's gray level is denoted by $r$ and the specific gray leve
 \section{Local Enhancement}
 Although this global approach is suitable for overall enhancement, there are cases in which it is necessary to enhance details over small areas in an image. The histogram processing techniques previously described are easily adaptable to local enhancement. The procedure is to define a square or rectangular neighborhood and move the center of this area from pixel to pixel. At each location, the histogram of the points in the neighborhood is computed and either a histogram equalization or histogram specification transformation function is obtained. This function is finally used to map the gray level of the pixel centered in the neighborhood.
 %---------------------------------------------------------------------
-\section{Using Histogram Statistics}
+\section{Arithmetic/Logic Operations on Images}
+This operations are applicable on two or more images, e.g. subtraction. In the case of login operations, pixels are considered as a string of binary numbers (values of bits of pixels).\\
+\begin{description}
+\item[Masking] or \textit{Region of Interest (ROI) processing}, is the process of applying \textit{AND} or \textit{OR} logic operators on an image. It is used to isolate an area for processing.\\
+\item[Multiplication] can be used as a more effective method to create a grey-level masked image rather than binary one.
+\item[Image Subtraction] 
+	The formulation is as follows:
+	\begin{equation}
+		s(x, y) = f(x, y) - g(x, y)
+	\end{equation}
+	where $s$ is the subtraction result of images $f$ and $g$.
+\begin{description}
+	\item[Mask Mode Radiography] In this method, a picture of target texture of patient's body has been taken first, then after injecting a special medium into bloodstream, another picture of the same region has been taken. Subtraction of these two pictures, yields a clear picture of arteries in the target texture. 
+	\begin{figure}[h]
+	\centering
+	\includegraphics[width=300px]{./Imgs/mmr.png}
+	\caption{MMR; extracting picture of arteries by subtraction}
+	\end{figure}
+\end{description} 
+Note that there exist two normalization methods after subtraction:\\
+\begin{enumerate}
+	\item Add 255 to every pixel and divide all pixels by 2.
+	\item Find min and max pixel values and transform values to be in range of [0-255].
+\end{enumerate}
 
+\item[Image Averaging]
+
+\end{description}
 
 
 
