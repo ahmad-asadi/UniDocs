@@ -27,7 +27,6 @@
 \usepackage{natbib} % Required to change bibliography style to APA
 \usepackage{amsmath} % Required for some math elements 
 \usepackage{float}
-\usepackage{commath}%for math abs
 
 \setlength\parindent{0pt} % Removes all indentation from paragraphs
 
@@ -67,11 +66,49 @@ Instructor: & Dr. Nickabadi % Instructor/supervisor
 %	SECTION 1
 %----------------------------------------------------------------------------------------
 
-\section{The Bayesian Networks}
+\section{Basics}
 \begin{description}
-\item
+\item[Why to use independency] Using random variable's independencies is effective in reducing the size of joint probability distribution over them.
+\item[Chain Rule] The chain rule of conditional probabilities:
+\begin{equation}
+	P(X_1, X_2, \cdots, X_n) = P(x_1)\cdot P(X_2|X_1)\cdot P(X_3|X_1, X_2) \cdots P(X_n|X_{n-1}, X_{n-2}, \cdots, X_1) 
+\end{equation}
+\item[Factorization] Splitting the overall joint probability distribution into several conditional probability distributions (CPDs) where multiplications of CPDs reconstructs joint probability distribution.
+
 \end{description}
 
+\section{Naive/Idiot Bayes}
+The model includes a set of classes C, some number of features $X_1,\cdots,X_n$ and assumes that \textit{features are conditionally independent given the instance's class}:\\
+\begin{equation}
+P(C,X_1,\cdots,X_n) = P(C)\cdot \Pi_{i=1}^n P(X_i|C)
+\end{equation}
+Factors in this model:
+\begin{enumerate}
+\item A prior distribution $P(C)$
+\item A set of CPDs $P(X_j|C)$
+\end{enumerate}
+\section{Bayesian Networks}
+\begin{description}
+\item[DAG Representation]
+The core element of representation in bayesian networks is a \textit{directed acyclic graph (DAG)}, in which random variables are nodes and edges correspond to direct influence of random variables on each other.\\
+This DAG can be viewed as:\\
+	\begin{enumerate}
+	\item A data structure that provides the skeleton for representing a joint distribution compactly in a factorized way.
+	\item A compact representation for a set of conditional independence assumptions about a distribution.
+	\end{enumerate}
+	
+\item[Local Probability Models] A set of local probability
+models that represent the nature of the dependence of each variable on its parents, containing probability distributions of single random variables along with CPDs in model.
+
+\item[Reasoning Patterns] A joint distribution $P_B$ specifies the probability $P_B (Y = y | E = e)$ of any event $y$ given any observations $e$. We condition the joint distribution on the event $E = e$ by eliminating the entries in the joint inconsistent with our observation $e$, and renormalizing the resulting entries to sum to 1; we compute the probability of the event $y$ by summing the probabilities of all of the entries in the resulting posterior distribution that are consistent with $y$.
+\begin{description}
+	\item[Causal Reasoning] is a top-down flow of probability computations in DAG from causes to symptoms.
+	\item[Evidential Reasoning] is a bottom-up flow of probability computations in DAG from a symptom to its causes which yields the probability of each cause to be happened.
+	\item[Intercausal Reasoning] is a cross flow of probability computations in DAG from a cause to another cause passing collidors in the path.
+\end{description}
+
+\item[Basic Independencies in Bayesian Networks]
+\end{description}
 
 
 %----------------------------------------------------------------------------------------
